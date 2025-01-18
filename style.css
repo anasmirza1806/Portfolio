@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+.navbar span {
+    color: rgb(229, 160, 33);
+}
+.logo h2 {
+    font-size: 24px;
+    color: white;
+}
+.logo span {
+    color: rgb(229, 160, 33);
+}
+.list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+.list li {
+    margin: 0 15px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.list li a:hover {
+    color: rgb(229, 160, 33);
+    cursor: pointer;
+}
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-image: url('/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lefthero {
+    margin: 130px 50px;
+}
+
+.lefthero span {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(229, 160, 33);
+}
+
+.lefthero h2 {
+    font-size: 40px;
+    width: 70%;
+    color: white;
+}
+
+.lefthero h3 {
+    text-transform: uppercase;
+    gap: 30px;
+    font-size: 70px;
+    width: 50%;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.icons a{
+    /* padding: 10px; */
+    font-size: 30px;
+    color: white;
+}
+
+.icons i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button {
+    margin: 10px;
+    padding: 15px 10px;
+    background-color: white;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button p{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.button p,a{
+    color: black;
+    text-decoration: none;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.abt {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+.about .profile {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    z-index: -1;
+}
+
+.about .profile img {
+    width: 100%;
+    height: 400px;
+}
+
+.about-content {
+    width: 85%;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.about-content h3 {
+    line-height: 2.4rem;
+    margin-top: 30px;
+}
+
+.about-content p {
+    line-height: 1.8rem;
+    font-size: 18px;
+}
+
+.services {
+    display: flex;
+    padding: 50px;
+}
+
+.card img {
+    margin: auto;
+    width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+}
+
+.small-desc {
+    font-size: 1em;
+}
+
+.card {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    /* background-color: #f2f8f9; */
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    /* background: linear-gradient(to bottom, #c3e6ec, #a7d1d9); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.go-corner {
+    border: 2px solid black;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.go-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    right: -25px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+.card:hover:before {
+    transform: scale(35);
+}
+
+.card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+}
+
+.card:hover .go-corner {
+    color: white;
+    border: 2px solid white;
+}
+
+
+.experience {
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company img {
+    width: auto;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.work {
+    padding: 20px;
+}
+
+.work .name {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.work .work-time {
+    color: palevioletred;
+    font-weight: 600;
+}
+
+.work-desc {
+    font-size: 18px;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.projects span {
+    color: #452997;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.proj-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-border {
+    border: 1px solid rgb(86, 97, 219);
+}
+
+.contactmain {
+    padding: 40px 100px;
+    margin: auto;
+}
+
+.contactmain h1 {
+    padding: 20px 0px;
+}
+
+.name input,
+textarea {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.name input:hover,
+textarea:hover {
+    border: 1px solid #ccc;
+}
+
+.button1 {
+    border: 1px solid #ccc;
+    width: 20%;
+    margin: 10px;
+    /* padding: 10px 10px; */
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+.foot {
+    padding: 20px;
+    background-color: rgb(63, 63, 63);
+
+}
+
+.foot p {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:990px) {
+    .list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(63, 63, 63);
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .list li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* about  */
+    .about {
+        flex-direction: column;
+    }
+
+    .about .profile {
+        width: 100%;
+    }
+    .about .profile img {
+        width: 100%;
+    }
+    .about-content {
+        width: 100%;
+
+    }
+    .about-content h3 {
+        line-height: 2.4rem;
+        margin-top: 0px;
+    }
+    .about-content p {
+        line-height: 1.8rem;
+        font-size: 18px;
+    }
+
+
+    /* Experience */
+    .experience {
+        margin: 20px;
+        flex-direction: column;
+    }
+    .company img {
+        width: 100%;
+        height: 100px;
+    }
+    .work {
+        padding: 5px;
+    }
+    .work-desc {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 1.2rem;
+    }
+
+    /* Projects  */
+    .projects {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+   
+    .lefthero h2,
+    .lefthero h3 {
+        font-size: 24px;
+        width: 100%;
+        text-align: start;
+    }
+    .icons{
+        padding: 0px;
+    }
+    .icons i {
+        margin-left: 0px;
+    }
+    .button {
+        width: 100%;
+        font-size: 16px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    /* hero  */
+    .lefthero {
+        margin: 100px 0px;
+    }
+    .lefthero h2 {
+        width: 100%;
+    }
+    .lefthero h3 {
+        width: 100%;
+    }
+    .button {
+        width: 50%;
+    }
+    
+    /* services  */
+    .services {
+        flex-direction: column;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    
+    
+    /* Contact US  */
+    .contactmain {
+        padding: 100px 10px;
+    }
+    .contactmain h1 {
+        padding: 20px 0px;
+    }
+    .button1 {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    /* Footer  */
+    .foot p {
+        font-size: 16px;
+    }
+}
