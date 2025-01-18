@@ -62,7 +62,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    background-image: url('/hero.jpg');
+    background-image: url('./Images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
